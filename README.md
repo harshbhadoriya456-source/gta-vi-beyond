@@ -1,36 +1,79 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# GTA VI Beyond
+
+A modern fan-made GTA VI experience built with Next.js, TypeScript, Tailwind CSS, and Framer Motion.
+
+## Overview
+
+GTA VI Beyond is a visually immersive web application inspired by Grand Theft Auto VI. The project showcases characters, locations, vehicles, weapons, media galleries, and exclusive content from Leonida through a cinematic and interactive user experience.
+
+Designed as a portfolio and learning project, the website focuses on modern frontend development, responsive design, smooth animations, and immersive storytelling.
+
+## Features
+
+- Dynamic hero slideshow
+- Cinematic GTA VI-inspired interface
+- Character showcase section
+- Leonida locations exploration
+- Vehicles and weapons galleries
+- Media and screenshot collections
+- Countdown timer
+- Smooth scroll animations
+- Custom cursor effects
+- Responsive design for desktop and mobile
+
+## Tech Stack
+
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
+- Framer Motion
 
 ## Getting Started
 
-First, run the development server:
+Clone the repository:
+
+```bash
+git clone https://github.com/harshbhadoriya456-source/gta-vi-beyond.git
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000 in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Highlights
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Built using modern React and Next.js practices
+- Focus on immersive user experience and visual storytelling
+- Optimized image-based content delivery
+- Modular and reusable component architecture
+- Portfolio-ready frontend project
 
-## Learn More
+## Author
 
-To learn more about Next.js, take a look at the following resources:
+**Harsh Bhadoriya**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Computer Science Engineering Student  
+GLA University, Mathura
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+LinkedIn: https://www.linkedin.com/in/harshbhadoriya/
 
-## Deploy on Vercel
+## Disclaimer
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This project is a fan-made, non-commercial portfolio project created for educational and showcase purposes.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Grand Theft Auto, GTA VI, Rockstar Games, and all related intellectual property, trademarks, images, and assets belong to Rockstar Games and Take-Two Interactive.
+
+---
+
+⭐ If you found this project interesting, consider giving it a star.
