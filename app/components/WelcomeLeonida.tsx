@@ -32,11 +32,21 @@ transition={{
         Welcome To Leonida
       </h2>
 
-      <p className="mt-8 max-w-3xl text-xl text-zinc-400 leading-relaxed">
-        Home to Vice City and beyond. From neon-soaked beaches
-        to dangerous backroads, Leonida is Rockstar's biggest
-        and most ambitious world yet.
-      </p>
+      <p className="mt-8 max-w-4xl text-xl text-zinc-300 leading-relaxed">
+  Welcome to Leonida, a vibrant state where luxury, ambition
+  and chaos collide. From the neon-lit streets of Vice City
+  to the untamed wetlands of Grassrivers and the rugged
+  wilderness of Mount Kalaga, every region offers its own
+  stories, secrets and opportunities.
+</p>
+
+<p className="mt-4 max-w-4xl text-lg text-zinc-400 leading-relaxed">
+  Explore bustling nightlife, hidden backroads, breathtaking
+  coastlines and dangerous criminal empires in Rockstar's
+  most ambitious open world yet. Whether you're chasing
+  fortune, adventure or survival, Leonida promises an
+  unforgettable journey.
+</p>
     </motion.section>
   );
 }

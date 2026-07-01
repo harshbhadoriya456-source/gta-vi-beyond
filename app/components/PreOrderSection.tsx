@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 export default function PreOrderSection() {
   return (
     <section id="news" className="px-8 py-32">
@@ -16,22 +17,37 @@ export default function PreOrderSection() {
           that best fits your journey.
         </p>
 
-        <div className="rounded-[32px] bg-zinc-900/80 border border-white/10 p-10">
+        <motion.div
+  animate={{
+    y: [0, -10, 0],
+  }}
+  transition={{
+    duration: 4,
+    repeat: Infinity,
+    ease: "easeInOut",
+  }}
+  whileHover={{
+    scale: 1.03,
+    rotateX: 5,
+    rotateY: 5,
+  }}
+  className="mt-16 rounded-[28px] bg-zinc-900 p-10 border border-pink-500/20 shadow-[0_0_40px_rgba(255,91,167,0.15)]"
+>
+  <h3 className="text-3xl font-bold text-white">
+    Standard Edition
+  </h3>
 
-          <h3 className="text-3xl font-bold text-white">
-  Standard Edition
-</h3>
+  <p className="mt-4 text-5xl font-black text-white">
+    ₹5,999
+  </p>
 
-<p className="mt-4 text-5xl font-black text-white">
-  ₹5,999
-</p>
-
-<ul className="mt-6 space-y-2 text-zinc-400">
-  <li>• Full GTA VI Experience</li>
-  <li>• Explore Leonida</li>
-  <li>• Story Mode Access</li>
-  <li>• Future Online Access</li>
-</ul>
+  <ul className="mt-6 space-y-2 text-zinc-400">
+    <li>• Full GTA VI Experience</li>
+    <li>• Explore Leonida</li>
+    <li>• Story Mode Access</li>
+    <li>• Future Online Access</li>
+  </ul>
+</motion.div>
 
         
 
@@ -68,7 +84,7 @@ export default function PreOrderSection() {
           Available November 19, 2026
         </p>
 
-      </div>
+      
     </section>
   );
 }

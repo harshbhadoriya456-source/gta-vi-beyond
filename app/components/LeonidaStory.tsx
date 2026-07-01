@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 const showcaseItems = [
   {
     image: "/gta6/showcase/featured-car.avif",
@@ -56,54 +57,72 @@ export default function LeonidaStory() {
       </h2>
 
       <p className="mt-8 max-w-4xl text-xl text-zinc-300 leading-relaxed">
-        From the neon glow of Vice City to the untamed wetlands
-        of the Grassrivers, Leonida is a state built on ambition,
-        chaos and opportunity.
-      </p>
+  Leonida is a land of contrasts where luxury and danger exist side by side.
+  From the neon skyline of Vice City to the remote wilderness beyond its borders,
+  every region offers its own culture, opportunities and secrets waiting to be discovered.
+</p>
 
       <p className="mt-6 max-w-4xl text-lg text-zinc-400 leading-relaxed">
-        Every street tells a different story. Luxury yachts drift
-        across crystal waters while hustlers chase their next big
-        score. Hidden backroads lead to forgotten towns,
-        dangerous secrets and unexpected adventures.
-      </p>
+  Ambitious entrepreneurs, career criminals, tourists and dreamers all compete
+  for a place in Leonida's ever-changing story. Every district, highway and coastline
+  holds the potential for new adventures and unexpected encounters.
+</p>
 
       <p className="mt-6 max-w-4xl text-lg text-zinc-400 leading-relaxed">
-        Whether you're drawn by the lights of the city or the
-        mysteries beyond it, Leonida offers a world where
-        anything can happen.
-      </p>
-      <div className="grid md:grid-cols-3 gap-6 mt-12">
-  <div className="bg-white/5 p-6 rounded-2xl border border-white/10">
+  Whether you're chasing fortune in Vice City, exploring forgotten backroads
+  or uncovering mysteries hidden in the wilderness, Leonida rewards those willing
+  to take risks and write their own story.
+</p>
+      <div className="grid md:grid-cols-3 gap-4 mt-10">
+  <div className="bg-white/5 p-8 rounded-2xl border border-pink-500/20 shadow-[0_0_40px_rgba(236,72,153,0.12)] transition-all duration-300 hover:scale-105 hover:shadow-[0_0_60px_rgba(236,72,153,0.25)]">
     <h3 className="text-pink-400 font-bold mb-2">VICE CITY</h3>
     <p className="text-gray-300">
       Neon lights, luxury yachts and endless opportunities.
     </p>
   </div>
 
-  <div className="bg-white/5 p-6 rounded-2xl border border-white/10">
+  <div className="bg-white/5 p-8 rounded-2xl border border-pink-500/20 shadow-[0_0_40px_rgba(236,72,153,0.12)] transition-all duration-300 hover:scale-105 hover:shadow-[0_0_60px_rgba(236,72,153,0.25)]">
     <h3 className="text-pink-400 font-bold mb-2">GRASSRIVERS</h3>
     <p className="text-gray-300">
       Wild wetlands hiding secrets and danger.
     </p>
   </div>
 
-  <div className="bg-white/5 p-6 rounded-2xl border border-white/10">
+  <div className="bg-white/5 p-8 rounded-2xl border border-pink-500/20 shadow-[0_0_40px_rgba(236,72,153,0.12)] transition-all duration-300 hover:scale-105 hover:shadow-[0_0_60px_rgba(236,72,153,0.25)]">
     <h3 className="text-pink-400 font-bold mb-2">MOUNT KALAGA</h3>
     <p className="text-gray-300">
       Remote peaks, forests and breathtaking views.
     </p>
   </div>
 </div>
-<div
-  className="mt-12 h-[600px] rounded-[32px] overflow-hidden"
+<motion.div
+  initial={{ opacity: 0, y: 20 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  whileHover={{ scale: 1.02 }}
+  transition={{ duration: 0.6 }}
+  viewport={{ once: true }}
+  className="relative mt-12 h-[600px] rounded-[32px] overflow-hidden border border-pink-500/20 shadow-[0_0_100px_rgba(236,72,153,0.18)]"
   style={{
     backgroundImage: "url('/gta6/showcase/ULTIMATE_EDITION_01.avif')",
     backgroundSize: "cover",
     backgroundPosition: "center",
   }}
-/>
-      <div
+>
+  <div className="absolute bottom-8 left-8 bg-black/50 backdrop-blur-md border border-pink-500/20 rounded-2xl px-6 py-4">
+  <p className="text-pink-400 uppercase tracking-[0.3em] text-sm">
+    Featured Location
+  </p>
+
+  <h3 className="text-2xl font-bold text-white mt-1">
+    Vice City, Leonida
+  </h3>
+</div>
+</motion.div>
+      <motion.div
+  initial={{ opacity: 0, y: 0.3 }}
+  whileInView={{ opacity: 1, y: 1 }}
+  transition={{ duration: 0.6 }}
+  viewport={{ once: false, amount: 0.4 }}
   className="mt-16 h-[650px] rounded-[32px] overflow-hidden"
   style={{
     backgroundImage:
@@ -115,14 +134,35 @@ export default function LeonidaStory() {
 />
 <div className="grid md:grid-cols-2 gap-8 mt-12">
   {showcaseItems.map((item) => (
-    <div
-      key={item.title}
-      className="bg-white/5 rounded-[24px] overflow-hidden border border-white/10 hover:scale-[1.02] transition-all duration-300"
-    >
+    <motion.div
+  key={item.title}
+  initial={{
+    opacity: 0,
+    y: 80,
+    filter: "blur(12px)",
+  }}
+  whileInView={{
+    opacity: 1,
+    y: 0,
+    filter: "blur(0px)",
+  }}
+  transition={{
+    duration: 0.8,
+  }}
+  viewport={{
+    once: false,
+    amount: 0.2,
+  }}
+  whileHover={{
+    y: -10,
+    scale: 1.03,
+  }}
+  className="bg-white/5 rounded-[24px] overflow-hidden border border-pink-500/20 shadow-[0_0_40px_rgba(236,72,153,0.08)] hover:shadow-[0_0_70px_rgba(236,72,153,0.25)]"
+>
       <img
         src={item.image}
         alt={item.title}
-        className="w-full h-[280px] object-cover"
+        className="w-full h-[280px] object-cover transition-all duration-700 hover:scale-105"
       />
 
       <div className="p-6">
@@ -138,7 +178,7 @@ export default function LeonidaStory() {
           {item.description}
         </p>
       </div>
-    </div>
+    </motion.div>
   ))}
 </div>
 <div className="text-center mt-16">

@@ -9,7 +9,7 @@ const characters = [
     image: "/gta6/characters/Jason_Duval_06.jpg",
     role: "Protagonist",
     description:
-      "Jason wants an easy life, but trouble always seems to find him. After years among criminals and hustlers, he hopes for something better.",
+  "Jason wants an easy life, but trouble always seems to find him. After years among criminals, hustlers and dangerous opportunities, he dreams of something more stable. His partnership with Lucia could become the key to a new future—or pull him deeper into Leonida's criminal underworld.",
   },
 
   {
@@ -17,7 +17,7 @@ const characters = [
     image: "/gta6/characters/Lucia_Caminos_03.jpg",
     role: "Protagonist",
     description:
-      "Fresh out of prison and determined to change her future, Lucia is ready to take control of her destiny no matter the cost.",
+  "Fresh out of prison and determined to take control of her future, Lucia refuses to let setbacks define her. Intelligent, ambitious and fearless, she is prepared to do whatever it takes to secure the life she believes she deserves.",
   },
 
   {
@@ -25,7 +25,7 @@ const characters = [
     image: "/gta6/characters/Cal_Hampton_03.jpg",
     role: "Friend & Conspiracy Enthusiast",
     description:
-      "Cal prefers staying at home, browsing the internet and discussing conspiracy theories while avoiding unnecessary risks.",
+  "Cal prefers staying at home, browsing the internet and exploring conspiracy theories rather than chasing danger. Despite his laid-back personality, his unusual observations often reveal truths that others overlook.",
   },
 
   {
@@ -33,7 +33,7 @@ const characters = [
     image: "/gta6/characters/Boobie_Ike_03.jpg",
     role: "Businessman",
     description:
-      "A Vice City legend who transformed street hustle into a growing empire of clubs, businesses and influence.",
+  "A Vice City legend who transformed street hustle into a growing empire of clubs, real estate and entertainment ventures. Boobie understands that influence and business can be just as powerful as money.",
   },
 
   {
@@ -41,7 +41,7 @@ const characters = [
     image: "/gta6/characters/DreQuan_Priest_02.jpg",
     role: "Music Promoter",
     description:
-      "Ambitious and determined, DreQuan is working to build a music empire and become one of Vice City's major players.",
+  "Driven by ambition and a passion for music, Dre'Quan is determined to build a lasting entertainment empire. Every connection, performance and opportunity brings him closer to becoming one of Vice City's major power players.",
   },
 
   {
@@ -49,7 +49,7 @@ const characters = [
     image: "/gta6/characters/Real_Dimez_03.jpg",
     role: "Music Duo",
     description:
-      "Internet-famous artists who turned social media attention into growing success across Leonida.",
+  "Known for turning social media attention into real-world success, Real Dimez represents the new generation of Vice City celebrities. Their influence extends far beyond music, shaping trends and culture across Leonida.",
   },
 ];
 export default function CharactersSection() {
@@ -111,7 +111,7 @@ useEffect(() => {
   viewport={{ once: true }}
   transition={{ duration: 0.6 }}
   
-      className="overflow-hidden rounded-[24px] border border-zinc-800 bg-zinc-900 cursor-pointer"
+      className="overflow-hidden rounded-[24px] border border-zinc-800 bg-zinc-900 cursor-pointer shadow-[0_0_30px_rgba(236,72,153,0.12)]"
     >
       <img
         src={character.image}

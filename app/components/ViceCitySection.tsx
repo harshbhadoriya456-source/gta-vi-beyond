@@ -20,17 +20,20 @@ export default function ViceCitySection() {
           backgroundPosition: "center",
         }}
       >
-        <div className="absolute inset-0 bg-black/50" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/40 to-transparent" />
 
         <div className="relative z-10 flex h-[600px] items-end p-12">
           <div>
-            <p className="text-pink-400 uppercase tracking-[0.3em]">
-              Vice City, USA
-            </p>
+            <p className="uppercase tracking-[0.4em] text-pink-300 font-bold text-lg
+drop-shadow-[0_0_15px_rgba(236,72,153,0.9)]">
+  VICE CITY, USA
+</p>
 
-            <h2 className="mt-3 text-5xl font-black">
-              The Heart Of Leonida
-            </h2>
+          <div className="mt-2 h-[3px] w-32 rounded-full bg-gradient-to-r from-pink-500 via-purple-400 to-cyan-400 shadow-[0_0_20px_rgba(236,72,153,0.8)]" />
+
+            <h2 className="text-7xl font-black bg-gradient-to-r from-pink-400 via-purple-300 to-cyan-300 bg-clip-text text-transparent drop-shadow-[0_0_30px_rgba(236,72,153,0.4)]">
+  The Heart Of Leonida
+</h2>
 
             <p className="mt-4 max-w-xl text-zinc-300">
               Neon lights, beaches, crime empires and endless

@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 export default function UltimateEditionStories() {
   return (
     <section className="px-8 py-32">
@@ -14,7 +16,12 @@ export default function UltimateEditionStories() {
         From luxury lifestyles to dangerous criminal ventures,
         Ultimate Edition players gain access to unique experiences.
       </p>
-      <div
+      <motion.div
+      initial={{ opacity: 0, scale: 0.95 }}
+whileInView={{ opacity: 1, scale: 1 }}
+transition={{ duration: 1 }}
+viewport={{ once: true }}
+whileHover={{ scale: 1.01 }}
   className="mt-20 h-[650px] rounded-[32px] overflow-hidden"
   style={{
     backgroundImage:
@@ -23,7 +30,13 @@ export default function UltimateEditionStories() {
     backgroundPosition: "center",
   }}
 />
-<div className="mt-12 max-w-4xl">
+<motion.div
+  initial={{ opacity: 0, y: 20 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.6 }}
+  viewport={{ once: true }}
+  className="mt-12 max-w-4xl rounded-3xl p-8 border border-pink-500/20 shadow-[0_0_60px_rgba(236,72,153,0.15)]"
+>
   <p className="text-pink-400 uppercase tracking-[0.3em] font-bold">
     Vehicle
   </p>
@@ -36,7 +49,7 @@ export default function UltimateEditionStories() {
     Drive the rarest vehicles, own exclusive properties
     and experience a side of Vice City reserved for the elite.
   </p>
-</div>
+</motion.div>
     </section>
   );
 }

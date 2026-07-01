@@ -29,7 +29,7 @@ export default function VintageEdition() {
     backgroundPosition: "center",
   }}
 />
-<div className="mt-12 max-w-4xl">
+<div className="mt-12 max-w-4xl rounded-3xl p-8 border border-purple-500/20 shadow-[0_0_70px_rgba(168,85,247,0.25)]">
   <p className="text-pink-400 uppercase tracking-[0.3em] font-bold">
     Legacy
   </p>
@@ -39,9 +39,13 @@ export default function VintageEdition() {
   </h3>
 
   <p className="mt-6 text-xl text-zinc-400 leading-relaxed">
-    Before Leonida became the modern playground of criminals
-    and dreamers, Vice City was already building its legend.
-  </p>
+  Before Leonida became the modern playground of criminals and dreamers,
+  Vice City was already building its legend. Neon-lit boulevards,
+  luxury vehicles and a thriving nightlife transformed the city into
+  a symbol of ambition and excess. Many of the landmarks, cultures
+  and stories that define Leonida today trace their roots back to
+  this unforgettable era.
+</p>
 </div>
 <motion.div
   initial={{ opacity: 0, y: 80 }}
@@ -57,19 +61,21 @@ export default function VintageEdition() {
   }}
 />
 
-<div className="mt-12 max-w-4xl">
+<div className="mt-12 max-w-4xl rounded-3xl p-8 border border-white/10 bg-white/[0.02] backdrop-blur-sm">
   <p className="text-pink-400 uppercase tracking-[0.3em] font-bold">
     Nightlife
   </p>
 
-  <h3 className="mt-3 text-5xl font-black text-white">
-    Neon Nights
-  </h3>
+  <h3 className="mt-3 text-5xl font-black bg-gradient-to-r from-pink-400 via-purple-400 to-cyan-300 bg-clip-text text-transparent">
+  Neon Nights
+</h3>
 
   <p className="mt-6 text-xl text-zinc-400 leading-relaxed">
-    Flashing signs, crowded clubs and endless nightlife made
-    Vice City the entertainment capital of the coast.
-  </p>
+  Flashing signs, crowded clubs and endless nightlife made Vice City
+  the entertainment capital of the coast. From rooftop parties to
+  underground venues, the city never truly slept. Every night offered
+  new opportunities, new connections and new stories waiting to be written.
+</p>
 </div>
 
 <motion.div
@@ -86,19 +92,22 @@ export default function VintageEdition() {
   }}
 />
 
-<div className="mt-12 max-w-4xl">
+<div className="mt-12 max-w-4xl rounded-3xl p-8 border border-white/10 bg-white/[0.02] backdrop-blur-sm">
   <p className="text-pink-400 uppercase tracking-[0.3em] font-bold">
     Culture
   </p>
 
-  <h3 className="mt-3 text-5xl font-black text-white">
-    Ocean Drive Memories
-  </h3>
+  <h3 className="mt-3 text-5xl font-black bg-gradient-to-r from-pink-300 via-orange-300 to-pink-500 bg-clip-text text-transparent">
+  Ocean Drive Memories
+</h3>
 
   <p className="mt-6 text-xl text-zinc-400 leading-relaxed">
-    Palm-lined boulevards, pastel architecture and classic
-    nightlife defined a generation of Vice City legends.
-  </p>
+  Palm-lined boulevards, pastel architecture and classic nightlife
+  defined a generation of Vice City legends. Ocean Drive became a
+  symbol of freedom, style and ambition, attracting dreamers,
+  entrepreneurs and outlaws alike. Its vibrant atmosphere remains
+  one of the most recognizable parts of Leonida's history.
+</p>
 </div>
 
 <motion.div
@@ -120,14 +129,16 @@ export default function VintageEdition() {
     Classics
   </p>
 
-  <h3 className="mt-3 text-5xl font-black text-white">
-    Classic Machines
-  </h3>
+  <h3 className="mt-3 text-5xl font-black bg-gradient-to-r from-cyan-300 via-purple-300 to-pink-400 bg-clip-text text-transparent">
+  Classic Machines
+</h3>
 
   <p className="mt-6 text-xl text-zinc-400 leading-relaxed">
-    Relive the era of iconic vehicles that helped build
-    the reputation of Vice City's streets.
-  </p>
+  Relive the era of iconic vehicles that helped build the reputation
+  of Vice City's streets. From luxury cruisers to high-performance
+  sports cars, these machines represented power, status and freedom.
+  Their legacy continues to influence the vehicles seen across Leonida today.
+</p>
 </div>
     </section>
   );

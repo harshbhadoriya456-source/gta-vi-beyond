@@ -117,6 +117,7 @@ useEffect(() => {
     <p className="text-sm text-zinc-300">Release</p>
   </div>
 </div>
+<div className="mt-8 flex justify-center"><Countdown /></div>
 
 <div className="mt-10 flex flex-wrap justify-center gap-4">
 
@@ -147,6 +148,8 @@ useEffect(() => {
 >
   Explore Leonida
 </button>
+
+
           <div className="mt-16 flex flex-col items-center">
   <div className="h-10 w-[1px] bg-white/40" />
 
@@ -154,6 +157,7 @@ useEffect(() => {
     Scroll To Explore
   </p>
 </div>
+
 
         </div>
         </section>
@@ -225,15 +229,18 @@ useEffect(() => {
       WELCOME TO LEONIDA
     </p>
 
-    <h2 className="mt-4 text-7xl font-black text-white">
-      The Sun And Fun Capital
-    </h2>
+    <h2 className="mt-4 text-7xl font-black bg-gradient-to-r from-pink-500 via-purple-400 to-cyan-300 bg-clip-text text-transparent drop-shadow-[0_0_25px_rgba(236,72,153,0.4)]">
+  The Sun And Fun Capital
+</h2>
 
-    <p className="mt-6 text-xl text-zinc-300 max-w-2xl">
-      From Vice City beaches to forgotten backroads,
-      Leonida is a land of opportunity, danger,
-      ambition and unforgettable stories.
-    </p>
+    <p className="mt-6 text-xl text-zinc-300 max-w-4xl leading-relaxed">
+  From the neon-lit beaches of Vice City to the untamed
+  wetlands of Grassrivers and the rugged wilderness of
+  Mount Kalaga, Leonida is a state where opportunity and
+  danger exist side by side. Explore luxury lifestyles,
+  criminal empires, hidden secrets and unforgettable
+  adventures across Rockstar's most ambitious open world.
+</p>
   </motion.div>
 </motion.section>
 
@@ -565,12 +572,25 @@ useEffect(() => {
     backgroundPosition: "center",
   }}
 >
-        <div className="absolute inset-0 bg-black/50" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/50 to-transparent " />
         <div className="relative z-10">
-          <h3 className="text-xl font-semibold">Latest News</h3>
-          <p className="mt-3 text-zinc-400">
-            Rockstar updates and announcements
-          </p>
+          <h3 className="text-4xl font-black bg-gradient-to-r from-cyan-300 via-white to-pink-400 bg-clip-text text-transparent">
+  ROCKSTAR NEWSWIRE
+</h3>
+          <div className="mt-3 inline-flex items-center gap-2 rounded-full border border-pink-500/30 bg-pink-500/10 px-4 py-2">
+  <div className="h-2 w-2 rounded-full bg-pink-400 animate-pulse" />
+  <span className="text-sm uppercase tracking-[0.2em] text-pink-300">
+    Live Updates
+  </span>
+</div>
+          <p className="mt-4 max-w-xl text-zinc-300 leading-relaxed">
+  Stay updated with the latest GTA VI announcements,
+  screenshots, trailers and official Rockstar Newswire releases.
+</p>
+
+      <button className="mt-6 rounded-full border border-pink-500/30 bg-pink-500/10 px-6 py-3 font-bold text-pink-300 hover:bg-pink-500/20 transition-all">
+  View All News →
+</button>
         </div>
         </div>
       </section>
@@ -588,15 +608,18 @@ useEffect(() => {
       WELCOME TO LEONIDA
     </p>
 
-    <h2 className="mt-4 text-7xl font-black">
-      The Sun And Fun Capital
-    </h2>
+    <h2 className="mt-4 text-7xl font-black bg-gradient-to-r from-pink-400 via-orange-300 to-cyan-300 bg-clip-text text-transparent">
+  The Sun And Fun Capital
+</h2>
 
-    <p className="mt-6 text-xl text-zinc-300">
-      From Vice City beaches to rural backroads,
-      Leonida is filled with opportunities,
-      danger and unforgettable stories.
-    </p>
+    <p className="mt-6 text-xl text-zinc-300 max-w-4xl leading-relaxed">
+  From the neon-lit beaches of Vice City to the untamed
+  wetlands of Grassrivers and the rugged wilderness of
+  Mount Kalaga, Leonida is a state where opportunity and
+  danger exist side by side. Explore luxury lifestyles,
+  criminal empires, hidden secrets and unforgettable
+  adventures across Rockstar's most ambitious open world.
+</p>
   </div>
 </section>
 
